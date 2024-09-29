@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35312.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BadgeGenerator", "BadgeGenerator\BadgeGenerator.csproj", "{6FBA0DD5-9869-42D9-9CA7-66B052F8F9A3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{02914551-CE43-4A62-B221-9D2D31F2C2DE}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		.gitignore = .gitignore
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCore.HealthChecks.Badge", "AspNetCore.HealthChecks.Badge\AspNetCore.HealthChecks.Badge.csproj", "{249034ED-24A4-4118-99A4-4D9E8815F563}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6FBA0DD5-9869-42D9-9CA7-66B052F8F9A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FBA0DD5-9869-42D9-9CA7-66B052F8F9A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FBA0DD5-9869-42D9-9CA7-66B052F8F9A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FBA0DD5-9869-42D9-9CA7-66B052F8F9A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{249034ED-24A4-4118-99A4-4D9E8815F563}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{249034ED-24A4-4118-99A4-4D9E8815F563}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{249034ED-24A4-4118-99A4-4D9E8815F563}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{249034ED-24A4-4118-99A4-4D9E8815F563}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {79BE3332-CAA7-43DA-9415-2F51595A5E29}
+	EndGlobalSection
+EndGlobal
