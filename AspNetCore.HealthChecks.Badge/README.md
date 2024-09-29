@@ -7,7 +7,7 @@ This library takes advantage of `Microsoft.Extensions.Diagnostics.HealthChecks` 
 Install the package by adding it through the NuGet Package Manager, or by executing:
 
 ```bash
-dotnet add package AspNetCore.HealthChecks.Badge
+dotnet add package BadgeGenerator.AspNetCore.HealthChecks.Badge
 ```
 
 ## Usage
@@ -15,6 +15,8 @@ dotnet add package AspNetCore.HealthChecks.Badge
 Using the package is as simple as registering a middleware in your application's pipeline.
 
 ```csharp
+using AspNetCore.HealthChecks.Badge;
+
 app.UseHealthBadge("healthz");
 ```
 

@@ -1,6 +1,4 @@
 <p align="center">
-  <a title="NuGet download" target="_blank" href="https://www.nuget.org/packages/BadgeGenerator"><img src="https://img.shields.io/nuget/dt/BadgeGenerator"></a>
-  <a title="NuGet download" target="_blank" href="https://www.nuget.org/packages/BadgeGenerator"><img alt="NuGet" src="https://img.shields.io/nuget/v/BadgeGenerator"></a>
   <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/armanossiloko/badge-generator">
   <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/armanossiloko/badge-generator">
   <a title="MIT License" target="_blank" href="https://licenses.nuget.org/MIT"><img src="https://img.shields.io/github/license/armanossiloko/badge-generator"></a>
@@ -9,6 +7,11 @@
 # Badge Generator Library
 
 This is a simple .NET library that can generate SVG badges dynamically. The badges can contain text as well as icons (through image URLs) and are customizable in terms of size, padding and colors.
+
+| Name | Version | Downloads |
+|---|---|---|
+| BadgeGenerator | <a title="NuGet download" target="_blank" href="https://www.nuget.org/packages/BadgeGenerator"><img alt="NuGet" src="https://img.shields.io/nuget/v/BadgeGenerator"></a> | <a title="NuGet download" target="_blank" href="https://www.nuget.org/packages/BadgeGenerator"><img src="https://img.shields.io/nuget/dt/BadgeGenerator"></a> |
+| BadgeGenerator.AspNetCore.HealthChecks.Badge | <a title="NuGet download" target="_blank" href="https://www.nuget.org/packages/BadgeGenerator.AspNetCore.HealthChecks.Badge"><img alt="NuGet" src="https://img.shields.io/nuget/v/BadgeGenerator.AspNetCore.HealthChecks.Badge"></a> | <a title="NuGet download" target="_blank" href="https://www.nuget.org/packages/BadgeGenerator.AspNetCore.HealthChecks.Badge"><img src="https://img.shields.io/nuget/dt/BadgeGenerator.AspNetCore.HealthChecks.Badge"></a> |
 
 ## Installation
 
@@ -19,9 +22,9 @@ To include this library in your project, you can install one of the two "variant
 dotnet add package BadgeGenerator
 ```
 
-- Alternatively, you can install the `AspNetCore.HealthChecks.Badge` version which provides a middleware extension that returns a badge containing your application's current health status:
+- Alternatively, you can install the `BadgeGenerator.AspNetCore.HealthChecks.Badge` version which provides a middleware extension that returns a badge containing your application's current health status:
 ```bash
-dotnet add package AspNetCore.HealthChecks.Badge
+dotnet add package BadgeGenerator.AspNetCore.HealthChecks.Badge
 ```
 
 ## Usage
@@ -78,6 +81,8 @@ var metadata = new BadgeMetadata
 You can install `AspNetCore.HealthChecks.Badge` and register an `UseHealthBadge()` middleware somewhere in your app's pipeline.
 
 ```csharp
+using AspNetCore.HealthChecks.Badge;
+
 app.UseHealthBadge("healthz");
 ```
 
