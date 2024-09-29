@@ -19,7 +19,7 @@ public static class BadgeCreator
 		int charWidth = 7;
 		int totalWidth = 0;
 
-		List<string> columns = [];
+		List<string> columns = new();
 		int xOffset = 0;
 
 		foreach (var part in badgeSections)
